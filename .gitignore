@@ -31,4 +31,4 @@ db.sqlite3-journal
 Thumbs.db
 
 # Environment variables
-.env
+.envsource-config.json
