@@ -2,10 +2,9 @@ version: 1.0
 runtime: python3
 build:
   commands:
-    - python -m pip install --upgrade pip
+    - pip install --upgrade pip
     - pip install -r requirements.txt
 run:
-  runtime-version: 3.11
-  command: gunicorn djangotutorial.wsgi:application --bind 0.0.0.0:8000
+  command: sh startup.sh
 network:
   port: 8000
